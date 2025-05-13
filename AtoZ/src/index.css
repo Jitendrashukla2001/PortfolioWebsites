@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: whitesmoke;
+}
+.form-box{
+  box-sizing: border-box;
+  border-radius: 2px 2px 2px;
+  margin-left:40px;
+}
+.space{
+  margin-left: 10px;
+}
+.form1{
+  background-color: lightslategrey;
+}
+
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* Change this to your desired hover color */
+}
+.bg-light{
+  background-color:rgb(153, 160, 168) !important;
+}
+.shake:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+ img{
+  width:750px !important;    
+  height:350px !important;   
+  /* overflow: hidden;  */
+  /* object-fit: contain;  */
+
+}
+
+.scroll-container {
+  overflow: hidden; /* Hide the scrollbar */
+  position: relative;
+  width: 100%;
+  height: 300px; /* Adjust as needed */
+}
+
+.scroll-images {
+  display: flex;
+  animation: scroll 10s linear infinite; /* Control the speed of scrolling */
+}
+
+.scroll-images img {
+  width: 100%;
+  flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
